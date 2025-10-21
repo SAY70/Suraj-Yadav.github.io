@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>NB</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link media="screen" href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="assets/css/map_.css">
+  <link rel="stylesheet" href="assets/css/citations_map.css">
+  <link rel="stylesheet" href="assets/css/gallery_style.css">
+  <link rel="stylesheet" href="assets/css/spotlight.min.css">
+  <link rel="stylesheet" href="assets/css/chord_style.css">
+  <link rel="stylesheet" href="assets/css/radarplot.css">
+
+
+<!-- marker cluster -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css" />
+<link   rel="stylesheet"   href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+
+
+
+  <!-- jQuery -->
+<!--   <script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link    href="assets/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script  type="text/javascript" src="assets/js/jquery.nanogallery2.min.js"></script> -->
+
+  <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.21.8/babel.js"></script>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.js"></script>
+  <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+
+  <script src="https://unpkg.com/react-globe.gl@2.24.1/dist/react-globe.gl.min.js"></script>
+  <!--<script src="../../dist/react-globe.gl.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/spotlight.min.js"></script>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="assets/js/chordDiagram.js" defer></script> 
+
+</head>
+
+<body>
+      <div id="particles-js"></div>
+    <div id="overlay">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <!-- <div id="particles-js"></div> -->
+    <div class="container">
+
+      
+      <h1 display:inline><a href="index.html">Nārāyaṇarāo <span style="color:#1af07d">B.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>I'm a passionate <span>learner</span></h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+<!--          <li><a class="nav-link" href="#services">Services</a></li>-->
+          <li><a class="nav-link" href="#portfolio">Research</a></li>
+          <li><a class="nav-link" href="#contact">Gallery</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+
+		<!-- <a href="https://www.facebook.com/narayana.bhogapurapu" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a> -->
+        <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+
+        <a href="https://scholar.google.com/citations?user=-OryAUsAAAAJ&hl=en" target="_blank"class="instagram">
+              <i><img src="assets/img/icons/gsw.png" width=25px></i></a>
+        <a href="https://www.researchgate.net/profile/Narayana-Bhogapurapu"  target="_blank" class="instagram">
+              <i><img src="assets/img/icons/rgw.png" width=25px></i></a>
+        <a href="https://github.com/Narayana-Rao" target="_blank" class="github">
+              <i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/narayanarao-bhogapurapu-072117106/" target="_blank" class="linkedin">
+              <i class="bi bi-linkedin"></i></a>
+        <a href="https://www.google.com/search?q=Narayanarao+bhogapurapu" target="_blank" class="search">
+              <i class="bi bi-search"></i></a>
+<!--         <details>
+            <summary></summary>
+        <a href="https://www.linkedin.com/in/narayanarao-bhogapurapu-072117106/" target="_blank" class="linkedin">
+              <i class="bi bi-linkedin"></i></a>
+                      <a href="https://www.linkedin.com/in/narayanarao-bhogapurapu-072117106/" target="_blank" class="linkedin">
+              <i class="bi bi-linkedin"></i></a>
+        </details> -->
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <!-- <p>Learn more about me</p> -->
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/NB_BW.png" class="img-fluid" alt="" style="border-radius: 50%;">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Postdoctoral Fellow </h3> <!--&amp; Graphic Designer</h3>-->
+<!--           <p class="fst-italic"> -->
+<!-- 						I am a passionate learner -->
+<!--           </p> -->
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+<!--                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>-->
+<!--                 <li><em class="bi bi-chevron-right"></em> <strong>Website:</strong> <span><a href="https://narayana-rao.github.io" target="_blank">narayana-rao.github.io</a></span></li> -->
+                <li><i class="bi bi-chevron-right"></i> <strong>Affiliation/s:</strong> <span> UMass Amherst and Caltech </span></li>      
+                <!-- <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mumbai, India</span></li> -->
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+<!--                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>-->
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:narayanarao.bhogapurapu@gmail.com">narayanarao.bhogapurapu@gmail.com</a></span></li>
+                <!-- <li><em class="bi bi-chevron-right"></em> <strong>Email:</strong> <span>
+                  <a href="mailto:narayanarao.bhogapurapu@gmail.com">narayanarao.bhogapurapu@gmail.com</a><br>
+                 --></span></li>
+<!--                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
+              </ul>
+            </div>
+          </div>
+          <p align="justify">
+        		My research focuses on advancing Synthetic Aperture Radar (SAR) techniques for soil moisture estimation, infrastructure monitoring, ground deformation mapping, and vegetation analysis. I have developed novel methodologies to estimate soil moisture over croplands using dual-pol GRD SAR, full, and compact polarimetric SAR data, enabling large-scale, high-resolution monitoring. Additionally, I have proposed vegetation descriptors for dual-pol GRD SAR that support both soil moisture estimation and crop biophysical parameter retrieval. These techniques are implemented on AWS, Google Earth Engine, and Google Colab, with potential applications in operational crop monitoring platforms. Currently, I’m working on forest canopy height and biomass estimation using InSAR and LiDAR. My career goal is to secure a research position in remote sensing to contribute to scientific progress and national development.
+      		</p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Awards, Fellowships, &amp; Grants      </h2>
+      </div>
+
+      <div class="row">    
+        <table class="tg" style="border-collapse: collapse; width: 100%;">
+          <thead>
+            <tr style="border-bottom: 2px solid #1af07d;border-top: 2px solid rgb(255, 255, 255);">
+              <th style="border: none; padding: 8px; text-align: left;"><span style="font-weight: bold; color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Name of award</span></th>
+              <th style="border: none; padding: 8px; text-align: left;"><span style="font-weight: bold; color: #1af07d; font-style: normal; text-decoration: none;">Description</span></th>
+              <th style="border: none; padding: 8px; text-align: left;"><span style="font-weight: bold; color: #1af07d; font-style: normal; text-decoration: none;">Year</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Naik and Rastogi Excellence in Ph. D. Thesis Award</span></td>
+              <td style="border: none; padding: 8px;">This prestigious award is given to Ph.D. Candidates for outstanding research carried out as part of their doctoral work at IIT Bombay.</td>
+              <td style="border: none; padding: 8px;">August 2024</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">IEEE Mikio Takagi Student Prize (MTStP)</span></td>
+              <td style="border: none; padding: 8px;">This prestigious award is given to a student who has presented an outstanding paper at the IEEE Geoscience and Remote Sensing Symposium (IGARSS).</td>
+              <td style="border: none; padding: 8px;">July 2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">IEEE GRSS Travel Grant</span></td>
+              <td style="border: none; padding: 8px;">This grant is awarded by IEEE GRSS society to support the travel for participating in the IEEE Geoscience and Remote Sensing Symposium (IGARSS).</td>
+              <td style="border: none; padding: 8px;">July 2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Visiting scholar Fellowship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the University of Massachusetts Amherst,</a> United States.</td>
+              <td style="border: none; padding: 8px;">Jan 2022 - Dec 2023</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Fulbright-Nehru Doctoral Research Fellowship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by United States – India Educational Foundation (USIEF).</td>
+              <td style="border: none; padding: 8px;">2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Earth Observation Fellowship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the <a href="https://www.cropin.com/">CropIn Technology Solutions Pvt. Ltd.</a> India.</td>
+              <td style="border: none; padding: 8px;">July 2021 - Dec 2021</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Shortlisted as EO-browser Custom script contest 2019</span></td>
+              <td style="border: none; padding: 8px;">Sentinel-hub and the Copernicus EU Earth Observation programme and the European Space Agency organized <a href="https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/soil_moisture_estimation/">EO-browser custom script contest</a> for globally scripting hackathon</td>
+              <td style="border: none; padding: 8px;">2020</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Ph.D. Assistantship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the Ministry of Human Resource Development, Government of India.</td>
+              <td style="border: none; padding: 8px;">2019 - 2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">M.Tech Assistantship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the Ministry of Human Resource Development, Government of India.</td>
+              <td style="border: none; padding: 8px;">2016 - 2018</td>
+            </tr>
+            <tr style="border-bottom: 2px solid rgb(255, 255, 255);">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Post-matric scholarship</span></td>
+              <td style="border: none; padding: 8px;">This competitive sponsorship award is provided by the Government of Andhra Pradesh, India.</td>
+              <td style="border: none; padding: 8px;">2012 - 2016</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+
+    </div><!-- End Interests -->
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>courses/CERTICATIONS</h2>
+      </div>
+
+     <div class="row skills-content">
+
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/IGARSS22.png" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
+            IEEE GRSS Mikio Takagi Student Prize
+        </div>
+
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/GRSS_2021.png" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
+      			GRSS Expert lecture-2021
+        </div>
+
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/PolInSART_2021.png" alt="" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+            PolInSAR 2021 Tutorial
+        </div>
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/APSART_2021.png" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
+            APSAR 2021 Tutorial 
+        </div>
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/EOC_echos_2019.png" alt="" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+            Echos in Space : EO College 2019
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="assets/docs/certificates/NPTEL_2017.jpeg" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
+            NPTEL-2017
+        </div>
+
+
+      </div>
+
+
+
+    </div><!-- End Skills -->
+
+	      <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>SKILLS</h2>
+      </div>
+      
+      <div class="row">
+        <h5 style="color:#1af07d;">Programming</h5>
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/c.png" alt="C" width="50" height="50"><p>C</p>
+                  </div>
+        </div>
+
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/cpp.png" alt="CPP" width="50" height="50"><p>C++</p>
+                  </div>
+        </div>
+        <!-- <div class="w-100"></div> -->
+
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/python.png" alt="Python" width="50" height="50"><p>Python</p>
+                  </div>
+        </div>
+
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/matlab.png" alt="MATLAB" width="50" height="50"><p>MATLAB</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/rl.png" alt="R" width="50" height="50"><p>R</p>
+                  </div>
+        </div>
+
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/js.png" alt="JS" width="50" height="50"><p>Javascript</p>
+          </div>
+        </div>
+<!--         <div class="col-lg-3 col-md-6">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/matlab.png" alt="MATLAB" width="50" height="50"><p>MATLAB</p>
+                  </div>
+        </div> -->
+       </div>
+       <div class="row">
+      <h5 style="color:#1af07d;">Software and Tools</h5>
+
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/qgis.png" alt="QGIS" width="50" height="50"><p>QGIS</p>
+                  </div>
+        </div>
+
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/polsarpro_ico.gif" alt="PolSARpro" width="50" height="50"><p>PolSARpro</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/snap.png" alt="ESA-SNAP" width="50" height="50"><p>ESA-SNAP</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/arcmap.png" alt="ArcMap" width="50" height="50"><p>ArcMap</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/imagine.png" alt="ERDAS IMAGINE" width="50" height="50"><p>ERDAS IMAGINE</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/envi.png" alt="ENVI" width="50" height="50"><p>ENVI</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/ol.png" alt="OPENLAYERS" width="50" height="50"><p>Open Layers</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+        <div data-animate-effect="fadeInRight" align="center">
+        <img src="assets/img/icons/git1.png" alt="GIT" width="50" height="50"><p>git</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="row">
+      <h5 style="color:#1af07d;">Cloud based platforms</h5>
+
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/gee.png" alt="GEE" width="50" height="50"><p>Google Earth Engine</p>
+                  </div>
+        </div>
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/aws.png" alt="AWS" width="80" height="50"><p>Amazon Web Services</p>
+                  </div>
+        </div>
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/mspc.png" alt="MSPC" width="50" height="50"><p>Microsoft Planetary Computer</p>
+                  </div>
+        </div>
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/gc.png" alt="GC" width="50" height="50"><p>Google Cloud</p>
+                  </div>
+        </div>
+        <div class="col-6 col-sm-2">
+                <div data-animate-effect="fadeInRight" align="center">
+                <img src="assets/img/icons/maap.png" alt="GC" width="180" height="50"><p>NASA-ESA: Multi-Mission Algorithm and Analysis Platform</p>
+                  </div>
+        </div>
+
+      </div>
+
+    </div><!-- End Interests -->
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Synergistic activity</h2>
+      </div>
+
+      <div class="row">
+        
+        <h5 style="color:#1af07d;">Peer Recognition:</h5>
+        <p> &nbsp; &nbsp; &nbsp; <strong> Verified Publons account:</strong> <a href="https://publons.com/researcher/4144298/narayanarao-bhogapurapu/">https://publons.com/researcher/4144298/narayanarao-bhogapurapu/</a> </p>
+        <p> 
+		  <ul>
+		    <li><strong>Session chair in sessions: </strong> TU1.R8, THU4.R7, and FR1.R7 in IEEE International Geoscience and Remote Sensing Symposium-IGARSS 2023, Pasadena, United States of America. </li>
+        <li><strong>Session manager in sessions:</strong> MO2.R6, TU2.R15, WE1.R1, WE2.R10, THU2.R15, FR2.R5 in IEEE Interna-tional Geoscience and Remote Sensing Symposium-IGARSS 2020, Hawaii, United States of America. </li>
+		    <li><strong>Session manager in sessions:</strong> : Tutorial HD-3, Young Professional Events, FR2.H2 in IEEE International India Geoscience and Remote Sensing Symposium 2021, Gujarat, India.</li>
+        <li><strong>Session manager in sessions:</strong> WE1.R2, FR2.R1 in IEEE International India Geoscience and Remote SensingSymposium 2020, Gujrat, India. </li>
+		  </ul>
+	    </p>
+        
+		  
+	    <h5 style="color:#1af07d;">Professional Membership:</h5>
+		  <ul>
+		  <li>IEEE Geoscience and Remote Sensing Society (S’19 M'23)</li>
+      <li>American Geophysical Union (S’22 M'23)</li>
+		  <li>Indian Society of Remote Sensing (Life Member’21 – L-5619)</li>
+		  </ul>
+      <h5 style="color:#1af07d;">Reviewer:  Journals/Conferences/Projects</h5>
+      <ul>
+      <li>Journal:  
+        <ul>
+        <li>Remote Sensing of Environment </li>
+        <li>IEEE Geoscience and Remote Sensing Magazine </li>
+        <li>Nature Scientific data</li>
+        <li>IEEE Geoscience and Remote Sensing Letters</li>
+        <li>International Journal of Remote Sensing</li>
+        <li>Canadian Journal of Remote Sensing</li>
+        <li>IEEE Access</li>
+        <li>Current Science Journal</li>
+        <li>Journal of Open Source Software</li>
+        <li>Progress In Electromagnetics Research</li>
+      </ul>
+    </li>
+      <li>Conference:  
+        <ul>
+          <li>ICETCI 2021 :  International Conference on Emerging Techniques in Computational Intelligence </li>
+          <li>M2GARSS 2022: IEEE Mediterranean and Middle-East Geoscience and Remote Sensing Symposium</li>
+        </ul>
+      </li>
+      
+      </ul>
+      </div>
+
+    </div><!-- End Interests -->
+	  
+	  <!-- End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+<!--         <p>Check My Resume</p>   -->
+		  <a href="assets/docs/CV.pdf"> <button class="btn download"><i class="bi bi-download"></i> <b>Download CV</b></button></a>		  
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0">
+            <h4>Narayanarao B. (Visititing Postdoctoral Fellow) </h4>
+            <h5>2024 - present</h5>
+            <p><em><strong>Research interests:</strong> ISRO L- & S-band Airborne SAR (ASAR) data calibration | Forest canopy height estimation </em></p>
+            <p><em>Institute: </em><span style="color:#00bbff"><a href="https://www.caltech.edu" target="_blank">California Institute of Technology</a></span>, USA </br>
+            </p>
+<!--             <p>
+            <ul>
+              <li>MRSLab, CSRE, IIT Bombay, India. 400076</li>
+              <li>(+91) 222-576-4654</li>
+              <li>narayanarao.bhogapurapu@gmail.com</li>
+            </ul>
+            </p> -->
+          </div>
+
+          <div class="resume-item pb-0">
+            <h4>Narayanarao B. (Postdoctoral Fellow) </h4>
+            <h5>2023 - present</h5>
+            <p><em><strong>Research interests:</strong> InSAR | Forest canopy height estimation | above ground biomass estimation </em></p>
+            <p><em>Institute: </em><span style="color:#00bbff"><a href="https://www.umass.edu//" target="_blank">University of Massachusetts Amherst</a></span>, USA </br>
+            </p>
+<!--             <p>
+            <ul>
+              <li>MRSLab, CSRE, IIT Bombay, India. 400076</li>
+              <li>(+91) 222-576-4654</li>
+              <li>narayanarao.bhogapurapu@gmail.com</li>
+            </ul>
+            </p> -->
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+		  <div class="resume-item">
+            <h4>PhD (Geoinformatics and natural resources engineering)</h4>
+            <h5>2019 - 2023</h5>
+            <p><em>Institute: </em><span style="color:#00bbff"><a href="https://www.iitb.ac.in/" target="_blank">Indian Institute of Technology Bombay</a></span>, India </br>
+               <em>Thesis title: </em> Soil moisture estimation over croplands using PolSAR data<br>
+			         <em>Advisors: </em> Prof. Y.S.Rao &amp; Prof. Avik Bhattacharya<br>
+               <em>CPI: </em> 9.45/10.0<br>
+			  
+			       </p>
+          </div>
+          <div class="resume-item">
+            <h4>Master of Technology (Remote sensing &amp; GIS) </h4>
+            <h5>2016 - 2018</h5>
+            <p><em>Institute: </em><span style="color:#00bbff"><a href="https://www.nitw.ac.in/" target="_blank">National Institute of technology Warangal</a></span>, India </br>
+               <em>Thesis title: </em> Subsurface physical parameters sensitivity analysis using GPR modelling and simulations<br>
+               <em>Advisors: </em> Prof. K. V. Reddy &amp; Mr. D. K. Pandey<br>
+               <em>CPI: </em> 8.95/10.0<br>
+        
+             </p>
+          </div>
+          <div class="resume-item">
+            <h4>Bachelor of Engineering (civil)</h4>
+            <h5>2012 - 2016</h5>
+            <p><em>Institute: </em><span style="color:#00bbff"><a href="https://www.andhrauniversity.edu.in/" target="_blank">Andhra University</a></span>, India</br>
+               <em>Thesis title: </em> Analysis of multi-storied office building (manual design)<br>
+               <em>Advisor: </em> Prof. K. Santosh Kumar<br>
+               <em>CPI: </em> 8.45/10.0<br>
+            </p>         
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+	   <div class="resume-item">
+            <h4>Visiting scholar</h4>
+            <h5>January 2022 -  January 2023 </h5>
+            <p><em>
+                <span style="color:#00bbff"><a href="https://umass.edu/" target="_blank">University of Massachusetts Amherst </a></span><br>
+            </em></p>
+            <p>
+            <ul>
+              <li>Forest height estimation using InSAR techniques</li>
+            </ul>
+            </p>
+          </div>
+		
+          <div class="resume-item">
+            <h4>Teaching assistant</h4>
+            <h5>2019 - 2022</h5>
+            <p><em>
+                <span style="color:#00bbff"><a href="https://www.csre.iitb.ac.in/" target="_blank">CSRE</a></span>, <span style="color:#00bbff"><a href="https://www.iitb.ac.in/" target="_blank">Indian Institute of Technology Bombay</a></span>, India<br>
+                Level: Post graduate 
+            </em></p>
+            <p>
+            <ul>
+              <li>GNR647: Microwave Remote Sensing</li>
+              <li>GNR792: Communications Skills</li>
+              <li>GNR617: Image Interpretation Laboratory</li>
+              <li>GNR621: Natural Resources: Hydrosphere, Cryosphere and Atmosphere</li>
+              <li>GNR401: Remote sensing and Image Processing</li>
+            </ul>
+            </p>
+          </div>
+            <div class="resume-item">
+            <h4>Earth Observation Fellow</h4>
+            <h5>July 2021 - December 2021</h5>
+            <p><em>
+                <span style="color:#00bbff"><a href="https://www.cropin.com/" target="_blank">CropIn Technology Solutions Pvt. Ltd.</a></span><br>
+            </em></p>
+            <p>
+            <ul>
+              <li>Large scale high-resolution soil moisture product development using EO data</li>
+            </ul>
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4>Masters In-plant Training</h4>
+            <h5>July 2017 - May 2018</h5>
+            <p><em><span style="color:#00bbff"><a href="https://www.sac.gov.in/" target="_blank">Space Application center (ISRO)</a></span>, Ahmedabad, India</em></p>
+            <p>
+            <ul>
+              <li>Subsurface physical parameters sensitivity analysis using Ground Penetrating Radar modelling and simulations.</li>
+            </ul>
+            </p>
+          </div>
+
+            <div class="resume-item">
+            <h4>Summer In-plant Training</h4>
+            <h5>2015</h5>
+            <p><em>ISCO track sleepers Pvt. ltd. India</em></p>
+            <p>
+            <ul>
+              <li>Railway sleepers manufacturing.</li>
+            </ul>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+
+      <div class="section-title">
+        <h2>Co-authors &amp; Metrics </h2>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+            <div  id="chord-diagram"></div>
+          </div>
+        <div class="col-sm-6 mx-auto">
+          <div class="chart-container">
+            <canvas id="radar-chart"></canvas>
+          </div>
+        </div>
+      </div> 
+      <br><br><br>
+
+      <div class="section-title">
+        <h2>Publications</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Journals</li>
+            <li data-filter=".filter-card">Conferences</li>
+            <!-- <li data-filter=".filter-web">reports</li> -->
+		
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="row portfolio-container">
+        <div class="resume">
+        
+          <div class="col-lg-12 portfolio-item filter-app">
+
+            <!-- <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Paul Siqueira, and John Armston 2024 “A new InSAR temporal decorrelation model for seasonal vegetation change with dense time-series data”. <i> IEEE Geoscience and Remote Sensing Letters</i>. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/LGRS.2024.3434653" target="_blank">10.1109/LGRS.2024.3434653</a> </span>
+              </p>
+            </div>  -->
+
+            <div class="resume-item pb-0">
+              <p align="justify">
+                Partha Deb Roy, Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, and Somsubhra Chakraborty 2025 “Retrieval of Surface Soil Moisture at Field Scale Using Sentinel-1 SAR Data”. <i> Sensors</i>. doi: <span style="color:#00bbff"><a href="https://
+doi.org/10.3390/s25103065" target="_blank">10.3390/s25103065</a> </span>
+              </p>
+                  <div class="citation-buttons">
+                    <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj013', this)"> 📋 Copy BibTeX</button>
+                    <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj013', this)">📋 Copy Harvard</button>
+                    <!-- You can add more buttons for other formats -->
+                  </div>
+                  <div id="citations" style="display: none;">
+                    <textarea id="bibtexj013" readonly>
+                      @article{Roy2025retrieval,
+                        title={{Retrieval of Surface Soil Moisture at Field Scale Using Sentinel-1 SAR Data}},
+                        author={Deb Roy, Partha and Dey, Subhadip and Bhogapurapu, Narayanarao and Chakraborty, Somsubhra},
+                        journal={Sensors},
+                        year={2025},
+                        volume={25},
+                        pages={3065},
+                        publisher={MDPI}
+                      }
+                    </textarea>
+                    <textarea id="harvardj013" readonly>
+                      Roy, P.D.; Dey, S.; Bhogapurapu, N.; Chakraborty, S. Retrieval of Surface Soil Moisture at Field Scale Using Sentinel-1 SAR Data. Sensors 2025, 25, 3065.
+                    </textarea>
+                  </div>
+              <br>
+            </div>
+
+
+
+            <div class="resume-item pb-0">
+              <p align="justify">
+                <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Paul Siqueira, and John Armston 2024 “A new InSAR temporal decorrelation model for seasonal vegetation change with dense time-series data”. <i> IEEE Geoscience and Remote Sensing Letters</i>. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/LGRS.2024.3434653" target="_blank">10.1109/LGRS.2024.3434653</a> </span>
+              </p>
+                  <div class="citation-buttons">
+                    <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj012', this)"> 📋 Copy BibTeX</button>
+                    <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj012', this)">📋 Copy Harvard</button>
+                    <!-- You can add more buttons for other formats -->
+                  </div>
+                  <div id="citations" style="display: none;">
+                    <textarea id="bibtexj012" readonly>
+                      @article{bhogapurapu2024new,
+                        title={{A new InSAR temporal decorrelation model for seasonal vegetation change with dense time-series data}},
+                        author={Bhogapurapu, Narayanarao and Siqueira, Paul and Armston, John},
+                        journal={IEEE Geoscience and Remote Sensing Letters},
+                        year={2024},
+                        volume={21},
+                        pages={1-5},
+                        publisher={IEEE}
+                      }
+                    </textarea>
+                    <textarea id="harvardj012" readonly>
+                      Bhogapurapu, N., Siqueira, P. and Armston, J., 2024. A new InSAR temporal decorrelation model for seasonal vegetation change with dense time-series data. IEEE Geoscience and Remote Sensing Letters, 21, pp. 1-5.
+                    </textarea>
+                  </div>
+              <br>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify">S. S. Ghosh, D. Mandal, S. Kumar, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  B. Banerjee, P. Siqueira and A. Bhattacharya 2024 “An Evidence Modified Gaussian Process Classifier (EM-GPC) for Crop Classification Using Dual-Polarimetric C- and L- band SAR Data”. <i> IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</i>. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/JSTARS.2024.3470956" target="_blank">10.1109/JSTARS.2024.3470956</a> </span>
+              </p>
+                <div class="citation-buttons">
+                  <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj011', this)"> 📋 Copy BibTeX</button>
+                  <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj011', this)">📋 Copy Harvard</button>
+                  <!-- You can add more buttons for other formats -->
+                </div>
+                <div id="citations" style="display: none;">
+                  <textarea id="bibtexj011" readonly>
+                    @article{ghosh2024evidence,
+                      title={{An Evidence Modified Gaussian Process Classifier (EM-GPC) for Crop Classification Using Dual-Polarimetric C-and L-band SAR Data}},
+                      author={Ghosh, Swarnendu Sekhar and Mandal, Dipankar and Kumar, Sandeep and Bhogapurapu, Narayanarao and Banerjee, Biplab and Siqueira, Paul and Bhattacharya, Avik},
+                      journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+                      year={2024},
+                      volume={17},
+                      pages={18683-18702},
+                      publisher={IEEE}
+                    }
+                  </textarea>
+                  <textarea id="harvardj011" readonly>
+                    Ghosh, S.S., Mandal, D., Kumar, S., Bhogapurapu, N., Banerjee, B., Siqueira, P. and Bhattacharya, A., 2024. An Evidence Modified Gaussian Process Classifier (EM-GPC) for Crop Classification Using Dual-Polarimetric C-and L-band SAR Data. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing., 17, pp. 18683-18702
+                  </textarea>
+                </div>
+              <br>
+            </div> 
+
+
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Irena Hajnsek, Avik Bhattacharya, and Paul Siqueira 2023 “Soil permittivity estimation over vegetative fields using dual polarimetric SAR data”. <i> Remote Sensing Applications: Society and Environment</i>. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1016/j.rsase.2023.101130" target="_blank">10.1016/j.rsase.2023.101130</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj010', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj010', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj010" readonly>
+                  @article{dey2024soil,
+                    title={{Soil permittivity estimation over vegetative fields using dual polarimetric SAR data}},
+                    author={Dey, Subhadip and Bhogapurapu, Narayanarao and Hajnsek, Irena and Bhattacharya, Avik and Siqueira, Paul},
+                    journal={Remote Sensing Applications: Society and Environment},
+                    volume={33},
+                    pages={101130},
+                    year={2024},
+                    publisher={Elsevier}
+                  }
+                </textarea>
+                <textarea id="harvardj010" readonly>
+                  Dey, S., Bhogapurapu, N., Hajnsek, I., Bhattacharya, A. and Siqueira, P., 2024. Soil permittivity estimation over vegetative fields using dual polarimetric SAR data. Remote Sensing Applications: Society and Environment, 33, p.101130.
+                </textarea>
+              </div>
+              <br>
+            </div> 
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Avik Bhattacharya, Carlos López-Martínez, Irena Hajnsek and Y. S. Rao 2022 “Soil Permittivity Estimation Over Croplands Using Full and Compact Polarimetric SAR Data”. <i> IEEE Transactions on Geoscience and Remote Sensing</i>. doi: <span style="color:#00bbff"><a href="https://ieeexplore.ieee.org/document/9961197" target="_blank">10.1109/TGRS.2022.3224280</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj009', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj009', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj009" readonly>
+                  @article{bhogapurapu2022bsoil,
+                    title={{Soil permittivity estimation over croplands using full and compact polarimetric SAR data}},
+                    author={Bhogapurapu, Narayanarao and Dey, Subhadip and Bhattacharya, Avik and L{\'o}pez-Mart{\'\i}nez, Carlos and Hajnsek, Irena and Rao, Yalamanchili S},
+                    journal={IEEE Transactions on Geoscience and Remote Sensing},
+                    volume={60},
+                    pages={1--17},
+                    year={2022},
+                    publisher={IEEE}
+                  }
+                  
+                </textarea>
+                <textarea id="harvardj009" readonly>
+                  Bhogapurapu, N., Dey, S., Bhattacharya, A., López-Martínez, C., Hajnsek, I. and Rao, Y.S., 2022. Soil permittivity estimation over croplands using full and compact polarimetric SAR data. IEEE Transactions on Geoscience and Remote Sensing, 60, pp.1-17.
+                </textarea>
+              </div>
+              <br>
+            </div> 
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Saeid Homayouni, Avik Bhattacharya, and Y. S. Rao 2022 “Field-Scale Soil Moisture Estimation Using Sentinel-1 GRD SAR Data”. <i>Advances in Space Research</i>. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1016/j.asr.2022.03.019" target="_blank">10.1016/j.asr.2022.03.019</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj008', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj008', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj008" readonly>
+                  @article{bhogapurapu2022field,
+                    title={{Field-scale soil moisture estimation using sentinel-1 GRD SAR data}},
+                    author={Bhogapurapu, Narayanarao and Dey, Subhadip and Homayouni, Saeid and Bhattacharya, Avik and Rao, YS},
+                    journal={Advances in Space Research},
+                    volume={70},
+                    number={12},
+                    pages={3845--3858},
+                    year={2022},
+                    publisher={Elsevier}
+                  }                  
+                </textarea>
+                <textarea id="harvardj008" readonly>
+                  Bhogapurapu, N., Dey, S., Homayouni, S., Bhattacharya, A. and Rao, Y.S., 2022. Field-scale soil moisture estimation using sentinel-1 GRD SAR data. Advances in Space Research, 70(12), pp.3845-3858.
+                </textarea>
+              </div>
+              <br>
+            </div> 
+
+            <div class="resume-item pb-0">
+              <p align="justify">Swarnendu Sekhar Ghosh, Subhadip Dey,<span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Saeid Homayouni, Avik Bhattacharya, and Heather McNairn 2022 “Gaussian process regression model for crop biophysical parameter retrieval from multi-polarized C-band SAR data”. <i>Remote Sensing</i>. 14(4):934. doi: <span style="color:#00bbff"><a href="https://doi.org/10.3390/rs14040934" target="_blank">10.3390/rs14040934</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj007', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj007', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj007" readonly>
+                  @article{ghosh2022gaussian,
+                    title={{Gaussian process regression model for crop biophysical parameter retrieval from multi-polarized C-band SAR data}},
+                    author={Ghosh, Swarnendu Sekhar and Dey, Subhadip and Bhogapurapu, Narayanarao and Homayouni, Saeid and Bhattacharya, Avik and McNairn, Heather},
+                    journal={Remote sensing},
+                    volume={14},
+                    number={4},
+                    pages={934},
+                    year={2022},
+                    publisher={MDPI}
+                  }                 
+                </textarea>
+                <textarea id="harvardj007" readonly>
+                  Ghosh, S.S., Dey, S., Bhogapurapu, N., Homayouni, S., Bhattacharya, A. and McNairn, H., 2022. Gaussian process regression model for crop biophysical parameter retrieval from multi-polarized C-band SAR data. Remote sensing, 14(4), p.934.
+                </textarea>
+              </div>
+              <br>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Dipankar Mandal, Avik Bhattacharya, L. Karthikeyan, Heather McNairn and Y. S. Rao 2022 “Soil Moisture Retrieval Over Croplands Using dual-pol L-band GRD SAR Data”. <i>Remote Sensing of Environment</i>. Volume 271, 2022, Pages 112900, ISSN 0034-4257 doi: <span style="color:#00bbff"><a href="https://doi.org/10.1016/j.rse.2022.112900" target="_blank">10.1016/j.rse.2022.112900</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj006', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj006', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj006" readonly>
+                  @article{bhogapurapu2022asoil,
+                    title={{Soil moisture retrieval over croplands using dual-pol L-band GRD SAR data}},
+                    author={Bhogapurapu, Narayanarao and Dey, Subhadip and Mandal, Dipankar and Bhattacharya, Avik and Karthikeyan, L and McNairn, Heather and Rao, YS},
+                    journal={Remote Sensing of Environment},
+                    volume={271},
+                    pages={112900},
+                    year={2022},
+                    publisher={Elsevier}
+                  }              
+                </textarea>
+                <textarea id="harvardj006" readonly>
+                  Bhogapurapu, N., Dey, S., Mandal, D., Bhattacharya, A., Karthikeyan, L., McNairn, H. and Rao, Y.S., 2022. Soil moisture retrieval over croplands using dual-pol L-band GRD SAR data. Remote Sensing of Environment, 271, p.112900.
+                </textarea>
+              </div>
+              <br>
+            </div>  
+
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Saeid Homayouni, Avik Bhattacharya, and Heather McNairn 2021 “Unsupervised Classification of Crop Growth Stages with Scattering Parameters from Dual-Pol Sentinel-1 SAR Data”. <i>Remote Sensing</i>. 13 (21), 4412. doi: <span style="color:#00bbff"><a href="https://doi.org/10.3390/rs13214412" target="_blank">10.3390/rs13214412</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj005', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj005', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj005" readonly>
+                  @article{dey2021unsupervised,
+                    title={{Unsupervised classification of crop growth stages with scattering parameters from dual-pol Sentinel-1 SAR data}},
+                    author={Dey, Subhadip and Bhogapurapu, Narayanarao and Homayouni, Saeid and Bhattacharya, Avik and McNairn, Heather},
+                    journal={Remote Sensing},
+                    volume={13},
+                    number={21},
+                    pages={4412},
+                    year={2021},
+                    publisher={MDPI}
+                  }             
+                </textarea>
+                <textarea id="harvardj005" readonly>
+                  Dey, S., Bhogapurapu, N., Homayouni, S., Bhattacharya, A. and McNairn, H., 2021. Unsupervised classification of crop growth stages with scattering parameters from dual-pol Sentinel-1 SAR data. Remote Sensing, 13(21), p.4412.
+                </textarea>
+              </div>
+              <br>
+            </div>
+
+           <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, Ushasi Chaudhuri, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Juan Lopez-Sanchez, Biplab Banerjee, Avik Bhattacharya, Dipankar Mandal, and Y. S. Rao 2021 “Synergistic Use of TanDEM-X and Landsat-8 Datafor Crop-type Classification and Monitoring”. <i>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing.</i> doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/JSTARS.2021.3103911" target="_blank">10.1109/JSTARS.2021.3103911</a></span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj004', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj004', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj004" readonly>
+                  @article{dey2021synergistic,
+                    title={{Synergistic use of TanDEM-X and landsat-8 data for crop-type classification and monitoring}},
+                    author={Dey, Subhadip and Chaudhuri, Ushasi and Bhogapurapu, Narayanarao and Lopez-Sanchez, Juan M and Banerjee, Biplab and Bhattacharya, Avik and Mandal, Dipankar and Rao, Yalamanchili Subrahmanyeswara},
+                    journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+                    volume={14},
+                    pages={8744--8760},
+                    year={2021},
+                    publisher={IEEE}
+                  }      
+                </textarea>
+                <textarea id="harvardj004" readonly>
+                  Dey, S., Chaudhuri, U., Bhogapurapu, N., Lopez-Sanchez, J.M., Banerjee, B., Bhattacharya, A., Mandal, D. and Rao, Y.S., 2021. Synergistic use of TanDEM-X and landsat-8 data for crop-type classification and monitoring. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 14, pp.8744-8760.
+                </textarea>
+              </div>
+              <br>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Avik Bhattacharya, Dipankar Mandal, Juan Lopez-Sanchez, Heather McNairn, Carlos Lopez-Martinez  and Y. S. Rao 2021 “Dual-polarimetric descriptors from Sentinel-1 GRD SAR data for crop growth assessment”. <i>ISPRS Journal of Photogrammetry and Remote Sensing</i>. 20-35, 178. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1016/j.isprsjprs.2021.05.013" target="_blank">10.1016/j.isprsjprs.2021.05.013</a> </span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj003', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj003', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj003" readonly>
+                  @article{bhogapurapu2021dual,
+                    title={{Dual-polarimetric descriptors from Sentinel-1 GRD SAR data for crop growth assessment}},
+                    author={Bhogapurapu, Narayanarao and Dey, Subhadip and Bhattacharya, Avik and Mandal, Dipankar and Lopez-Sanchez, Juan M and McNairn, Heather and L{\'o}pez-Mart{\'\i}nez, Carlos and Rao, Yalamanchili S},
+                    journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+                    volume={178},
+                    pages={20--35},
+                    year={2021},
+                    publisher={Elsevier}
+                  }
+                </textarea>
+                <textarea id="harvardj003" readonly>
+                  Bhogapurapu, N., Dey, S., Bhattacharya, A., Mandal, D., Lopez-Sanchez, J.M., McNairn, H., López-Martínez, C. and Rao, Y.S., 2021. Dual-polarimetric descriptors from Sentinel-1 GRD SAR data for crop growth assessment. ISPRS Journal of Photogrammetry and Remote Sensing, 178, pp.20-35.
+                </textarea>
+              </div>
+              <br>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Avik Bhattacharya, Dipankar Mandal, Juan Lopez-Sanchez, Heather McNairn, and Alejandro C. Frery 2021 “Rice Phenology Mapping Using Novel Target Characterization Parameters from Polarimetric SAR Data”, <i>International Journal of Remote Sensing.</i> 42:14,5519-5543. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1080/01431161.2021.1921876" target="_blank">10.1080/01431161.2021.1921876</a></span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj002', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj002', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj002" readonly>
+                  @article{dey2021rice,
+                    title={{Rice phenology mapping using novel target characterization parameters from polarimetric SAR data}},
+                    author={Dey, Subhadip and Bhogapurapu, Narayanarao and Bhattacharya, Avik and Mandal, Dipankar and Lopez-Sanchez, Juan M and McNairn, Heather and Frery, Alejandro C},
+                    journal={International Journal of Remote Sensing},
+                    volume={42},
+                    number={14},
+                    pages={5515--5539},
+                    year={2021},
+                    publisher={Taylor \& Francis}
+                  }
+                </textarea>
+                <textarea id="harvardj002" readonly>
+                  Dey, S., Bhogapurapu, N., Bhattacharya, A., Mandal, D., Lopez-Sanchez, J.M., McNairn, H. and Frery, A.C., 2021. Rice phenology mapping using novel target characterization parameters from polarimetric SAR data. International Journal of Remote Sensing, 42(14), pp.5515-5539.
+                </textarea>
+              </div>
+              <br>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Dipankar Mandal,   Avik Bhattacharya and Y. S. Rao 2021 "PolSAR tools: A QGIS plugin for generating SAR descriptors". <i>Journal of Open Source Software</i>, 6(60), 2970. doi: <span style="color:#00bbff"><a href="https://doi.org/10.21105/joss.02970" target="_blank">10.21105/joss.02970</a></span>
+              </p>
+              <div class="citation-buttons">
+                <button class="btn cite" id="bibtexBtn" onclick="copyCitation('bibtexj001', this)"> 📋 Copy BibTeX</button>
+                <button class="btn cite" id="harvardBtn" onclick="copyCitation('harvardj001', this)">📋 Copy Harvard</button>
+                <!-- You can add more buttons for other formats -->
+              </div>
+              <div id="citations" style="display: none;">
+                <textarea id="bibtexj001" readonly>
+                  @article{bhogapurapu2021polsar,
+                    title={{PolSAR tools: A QGIS plugin for generating SAR descriptors}},
+                    author={Bhogapurapu, Narayanarao and Dey, Subhadip and Mandal, Dipankar and Bhattacharya, Avik and Rao, YS},
+                    journal={Journal of Open Source Software},
+                    volume={6},
+                    number={60},
+                    pages={2970},
+                    year={2021}
+                  }
+                </textarea>
+                <textarea id="harvardj001" readonly>
+                  Bhogapurapu, N., Dey, S., Mandal, D., Bhattacharya, A. and Rao, Y.S., 2021. PolSAR tools: A QGIS plugin for generating SAR descriptors. Journal of Open Source Software, 6(60), p.2970.
+                </textarea>
+              </div>
+              <br>
+            </div>
+
+          </div>
+
+
+
+          <!--=================== CONFERENCES ===================-->  
+          <div class="col-lg-12 portfolio-item filter-card">
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Paul Siqueira, John Armston,  Mikhail Urbazaev, Konrad Wessels and Laura Duncanson 2024 "Canopy Height Estimation Using C- and L-Band Insar Coherence Over Savannas and Dry Forests," 2024 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2024, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS53475.2024.10640881" target="_blank">10.1109/IGARSS53475.2024.10640881</a></span> <span style="color:#00bbff">(Invited session)</span> 
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify">Swarnendu Sekhar Ghosh, Sandeep Kumar, Avik Bhattacharya, Dipankar Mandal, Biplab Banerjee, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, and Paul Siqueira 2024 "Enhancing Crop Type Classification from Multi-Frequency Dual-Pol SAR Data by Probabilistic Fusion of Gaussian Processes," 2024 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2024, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS53475.2024.10642521" target="_blank">10.1109/IGARSS53475.2024.10642521</a></span> 
+              </p>
+            </div> 
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey,  Avik Bhattacharya,  Carlos L ́opez-Mart ́ınez, Irena Hajnsek  and Y. S. Rao 2022 "Soil permittivity estimation over croplands using PolSAR data," 2022 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2022, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS46834.2022.9883708" target="_blank">10.1109/IGARSS46834.2022.9883708</a></span> <span style="color:#00bbff">(Student paper competetion winner)</span> 
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"> <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Saeid Homayouni, A. Bhattacharya, and Y. S. Rao, “Scattering Parameters from Sentinel-1 SAR Data for crop growth assessment,” IEEE Mediterranean and Middle-East Geoscience and Remote Sensing Symposium (M2GARSS), 2022. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/M2GARSS52314.2022.9840171" target="_blank">10.1109/M2GARSS52314.2022.9840171</a></span>
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify"> Swarnendu Sekhar Ghosh, Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Saeid Homayouni, A. Bhattacharya, and Heather McNairn, “Crop biophysical parameter retrieval using Gaussian process regression from C-band polarimetric SAR data,” IEEE Mediterranean and Middle-East Geoscience and Remote Sensing Symposium (M2GARSS), 2022. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/M2GARSS52314.2022.9839744" target="_blank">10.1109/M2GARSS52314.2022.9839744</a></span>
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, S. Dey, A. Verma, A. Bhattacharya, Carlos L ́opez-Mart ́ınez and Praveen Pankajakshan, “Crop growth assessment using Sentinel-1 GRD SAR descriptors,” 2021 IEEE India Geoscience and Remote Sensing Symposium (InGARSS), Ahmedabad, India, 2021. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/InGARSS51564.2021.9791910" target="_blank">10.1109/InGARSS51564.2021.9791910</a></span>
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  A. Verma, Saeid Homayouni, Carlos L ́opez-Mart ́ınez, and A. Bhattacharya, “Simultaneous evaluation of the target scattering-type parameter and scattering power components from polarimetric SAR images,” 2021 IEEE India Geoscience and Remote Sensing Symposium (InGARSS), Ahmedabad, India, 2021. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/InGARSS51564.2021.9791986" target="_blank">10.1109/InGARSS51564.2021.9791986</a></span>
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify">A. Verma, Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Carlos L ́opez-Mart ́ınez, and A. Bhattacharya, “Dual polarimetric SAR signature for human-made target characterization,” 2021 IEEE India Geoscience and Remote Sensing Symposium (InGARSS), Ahmedabad, India, 2021. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/InGARSS51564.2021.9792130" target="_blank">10.1109/InGARSS51564.2021.9792130</a></span>
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Avik Bhattacharya, and Y. S. Rao  2021 “Soil Moisture Estimation Using Simulated NISAR Dual Polarimetric GRD Product over Croplands”, 7th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR). 2021, pp.1-6 doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/APSAR52370.2021.9688350" target="_blank">10.1109/APSAR52370.2021.9688350</a></span>
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>,  Avik Bhattacharya, Dipankar Mandal, Heather McNairn and Y. S. Rao  2021 “Novel Clustering Technique for Monitoring Crop Phenology”, 7th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR). 2021, pp.1-6 doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/APSAR52370.2021.9688426" target="_blank">10.1109/APSAR52370.2021.9688426</a></span>
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Avik Bhattacharya, and Y. S. Rao  2021 “Chandrayaan-2 Dual Frequency Synthetic Aperture Radar (DFSAR) Full and Compact Polarimetric Data Analysis for the Lunar Surface”, 7th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR). 2021, pp. 1-5, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/APSAR52370.2021.9688528" target="_blank">10.1109/APSAR52370.2021.9688528</a></span> 
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Dipankar Mandal, Avik Bhattacharya and Y. S. Rao 2021 "Monitoring Wheat Crop Growth Using a New Vegetation Index from Sentinel-1 GRD SAR Data," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 5921-5924, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS47720.2021.9554351" target="_blank">10.1109/IGARSS47720.2021.9554351</a></span> 
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Subhadip Dey, Avik Bhattacharya, and Y. S. Rao  2021 “Soil moisture estimation over canola crop using Simulated NISAR Dual Polarimetric GRD Product”, PolInSAR 2021: The 10th International Workshop on Science and Applications of SAR Polarimetry and Polarimetric Interferometry.
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Avik Bhattacharya, Alejandro C. Frery, and Paolo Gamba 2021 "Built-Up Area Mapping Using Full and Dual Polarimetric SAR Data," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1693-1696, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS47720.2021.9553040" target="_blank">10.1109/IGARSS47720.2021.9553040</a></span> 
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify">Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Avik Bhattacharya, and Y. S. Rao  2021 “Crop Monitoring Using Sentinel-1 GRD Product in GEE Platform”, PolInSAR 2021: The 10th International Workshop on Science and Applications of SAR Polarimetry and Polarimetric Interferometry.
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify">Abhinav Verma, Subhadip Dey, <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Dipankar Mandal, Dipanwita Haldar, Avik Bhattacharya 2021 "Polarimetric SAR Signature for Crop Characterization," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 503-506, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS47720.2021.9553979" target="_blank">10.1109/IGARSS47720.2021.9553979</a></span>
+              </p>
+            </div>            
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, D. Mandal, Y. S. Rao and A. Bhattacharya, “Soil Moisture Estimation for Wheat Crop Using Dual-Pol L-Band SAR Data,” 2020 IEEE India Geoscience and Remote Sensing Symposium (InGARSS), Ahmedabad, India, 2020, pp. 33-36, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/InGARSS48198.2020.9358940" target="_blank">10.1109/InGARSS48198.2020.9358940</a></span> 
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, D. Mandal, Y. S. Rao and A. Bhattacharya, “Soil Moisture Retrieval Using SAR Derived Vegetation Descriptors in Water Cloud Model,” IGARSS 2020 – 2020 IEEE International Geoscience and Remote Sensing Symposium, Waikoloa, HI, USA, 2020, pp. 4696-4699, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS39084.2020.9323699" target="_blank">10.1109/IGARSS39084.2020.9323699</a></span>
+              </p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <p align="justify">D. Mandal and <span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Vineet Kumar, Subhadip Dey, Debanshu Ratha, Avik Bhattacharya, Juan M. Loper-Sanchez, Heather McNairn and Y. S. Rao, "Vegetation Monitoring Using a New Dual-Pol Radar Vegetation Index: A Preliminary Study with Simulated NASA-ISRO SAR (NISAR) L-Band Data," IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium, Waikoloa, HI, USA, 2020, pp. 4870-4873, doi: <span style="color:#00bbff"><a href="https://doi.org/10.1109/IGARSS39084.2020.9324157" target="_blank">10.1109/IGARSS39084.2020.9324157</a></span>
+              </p>
+            </div>
+            <div class="resume-item pb-0">
+              <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span>, Pandey, D.K., Reddy, K.V. and Putrevu, D., 2020. “Study of Subsurface Roughness Impact on GPR Performance Using Modelling and Simulation”. In Applications of Geomatics in Civil Engineering (pp. 471-477). Springer, Singapore. doi: <span style="color:#00bbff"><a href="https://doi.org/10.1007/978-981-13-7067-0_36" target="_blank">10.1007/978-981-13-7067-0_36</a>
+              </p>
+            </div>
+          </div>
+<!--           <div class="row portfolio-container">
+            <div class="resume">
+            
+              <div class="col-lg-12 portfolio-item filter-web">
+                <div class="resume-item pb-0">
+                  <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span> 2018 "Sub-surface physical parameters sensitivity analysis using GPR modelling and simulations." <i> Master of Technology (Remote Sensing &amp; GIS) Thesis</i>
+                  </p>
+                </div>
+                  <div class="resume-item pb-0">
+                  <p align="justify"><span style="color:#1af07d">Narayanarao Bhogapurapu</span> 2016 "Analysis of multi-storied office building (manual design).", <i>Batchelor of Engineering (Civil) Thesis</i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+        </div>
+
+      </div>
+
+      <div class="section-title">
+        <h2>Collaborations</h2>
+      </div>
+      <div class="row">
+        <div id="map"></div>
+      </div> 
+      <br>
+      <div class="section-title">
+        <h2>CITED BY</h2>
+      </div>
+      <div class="row">
+        <div id="cite_map"></div>
+      </div> 
+
+      <!-- <div class="row" align=center>
+      <div id="globeViz" align=center></div>
+
+       <script type="text/jsx">
+        const { useState, useEffect } = React;
+
+        const polygonsMaterial = new THREE.MeshLambertMaterial({ color: 'darkslategrey', side: THREE.DoubleSide });
+
+        const World = () => {
+          const [landPolygons, setLandPolygons] = useState([]);
+
+          useEffect(() => {
+            // load data
+            fetch('https://narayana-rao.github.io/assets/js/land-110m.json').then(res => res.json())
+              .then(landTopo => {
+                setLandPolygons(topojson.feature(landTopo, landTopo.objects.land).features);
+              });
+          }, []);
+
+          return <Globe
+            backgroundColor="rgba(255,255,255,0)"
+            showGlobe={false}
+            showAtmosphere={false}
+            polygonsData={landPolygons}
+            polygonCapMaterial={polygonsMaterial}
+            polygonSideColor={() => 'rgba(0, 0, 0, 0)'}
+          />;
+        };
+
+        ReactDOM.render(
+          <World />,
+          document.getElementById('globeViz')
+        );
+      </script> 
+    </div> -->
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+  <!-- start gallery Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <!-- <p>Contact Me</p> -->
+      </div>
+
+      <div class="spotlight-group" data-fit="cover" data-autohide="all">
+        
+        <a class="spotlight" href="./assets/img/gallery/IMG-5955.jpg" data-description="IGARSS 2022, Kuala Lumpur,  Malaysia."  >
+        <img src="./assets/img/gallery/IMG-5955-thumb.jpg"></a>
+
+
+        <a class="spotlight" href="./assets/img/gallery/PXL_20230819_100716144.jpg" data-description="61st Convocation,  IIT Bombay." >
+        <img src="./assets/img/gallery/PXL_20230819_100716144-thumb.jpg"></a>
+        
+        
+        <a class="spotlight" href="./assets/img/gallery/PXL_20221213_142444116.jpg" data-description="AGU Fall meeting 2022." >
+        <img src="./assets/img/gallery/PXL_20221213_142444116-thumb.jpg"></a>
+        
+
+        <a class="spotlight" href="./assets/img/gallery/PXL_20221217_000021471.jpg" data-description="AGU Fall meeting 2022." >
+        <img src="./assets/img/gallery/PXL_20221217_000021471-thumb.jpg"></a>
+        
+
+        <a class="spotlight" href="./assets/img/gallery/mirslapril2022.jpg">
+        <img src="./assets/img/gallery/mirslapril2022-thumb.jpg"></a>
+        
+
+        <a class="spotlight" href="./assets/img/gallery/mirsl_igarss2023.jpg" data-description="MiRSL Dinner@ IGRASS 2023.">
+        <img src="./assets/img/gallery/mirsl_igarss2023-thumb.jpg"></a>
+        <a class="spotlight" href="./assets/img/gallery/igarss2023_cropin.jpg" data-description="IGRASS 2023, Pasadena.">
+        <img src="./assets/img/gallery/igarss2023_cropin-thumb.jpg"></a>
+        
+
+        <a class="spotlight" href="./assets/img/gallery/PXL_20230621_162155923.jpg" data-description="PolINSAR/BIOMASS workshop 2023.">
+        <img src="./assets/img/gallery/PXL_20230621_162155923-thumb.jpg">
+        </a>
+
+        <a class="spotlight" href="./assets/img/gallery/PXL_20230621_192329663.jpg" data-description="PolINSAR/BIOMASS workshop 2023.">
+        <img src="./assets/img/gallery/PXL_20230621_192329663-thumb.jpg"></a>
+        
+
+        <a class="spotlight" href="./assets/img/gallery/mrslab_20230819.jpg" data-description="MRSLab Dinner@65th Convocation,  IIT Bombay.">
+        <img src="./assets/img/gallery/mrslab_20230819-thumb.jpg"></a>
+
+
+            
+        <a class="spotlight" href="./assets/img/gallery/sa_filedwork/PXL_20231104_123859990.jpg" data-description="Savanna-Bio Field work-2023 in South Africa.">
+        <img src="./assets/img/gallery/sa_filedwork/PXL_20231104_123859990-thumb.jpg"></a>
+
+        <a class="spotlight" href="./assets/img/gallery/sa_filedwork/PXL_20231030_130547864.jpg" data-description="Savanna-Bio Field work-2023 in South Africa.">
+        <img src="./assets/img/gallery/sa_filedwork/PXL_20231030_130547864-thumb.jpg"></a>
+        
+        <a class="spotlight" href="./assets/img/gallery/20180402_160402.jpg" data-description="Ground Penetrating Radar Experiment 2018 @SAC-ISRO, Ahmedabad.">
+        <img src="./assets/img/gallery/20180402_160402-thumb.jpg"></a>
+
+        <a class="spotlight" href="./assets/img/gallery/nisar_workshop2022.JPG" data-description="NISAR Science workshop 2022, Pasadena.">
+        <img src="./assets/img/gallery/nisar_workshop2022-thumb.JPG"></a>
+        
+        <a class="spotlight" href="./assets/img/gallery/mirsl_smapvex22.jpg" data-description="SMAPVEX-2022 Field work@UMass">
+        <img src="./assets/img/gallery/mirsl_smapvex22-thumb.jpg"></a>
+
+        <a class="spotlight" href="./assets/img/gallery/field_20190628.JPG" data-description="JECAM Field work-2019">
+        <img src="./assets/img/gallery/field_20190628-thumb.JPG"></a>
+        
+        <a class="spotlight" href="./assets/img/gallery/mirsl_sept30.jpg">
+        <img src="./assets/img/gallery/mirsl_sept30-thumb.jpg"></a>
+
+        <a class="spotlight" href="./assets/img/gallery/above_nwt_202408.jpg" data-description="ABoVE Field work-2024, NWT, Canada">
+        <img src="./assets/img/gallery/above_nwt_202408-thumb.jpg"></a>
+        
+
+
+
+
+
+        </a>
+
+
+
+      </div>
+
+    </div>
+  </section>
+  <!-- end gallery Section -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/radarplot.js"></script>
+  <script src="assets/js/citationbtn.js"></script>
+  <!-- <script src="assets/js/barchart.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!-- <script src="assets/js/line.js"></script> -->
+<!-- <script src="assets/js/point.js"></script> -->
+<!-- <script src="assets/js/polygon.js"></script> -->
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+<script src="assets/js/map_.js"></script>
+<script src="assets/js/citations_map.js"></script>
+
+<!-- <script type="text/jsx" src="assets/js/globe.jsx"></script> -->
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100% ">
+  </div>
+</div>
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+</body>
+
+</html>
